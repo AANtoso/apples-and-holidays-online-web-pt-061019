@@ -49,9 +49,7 @@ end
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
-  new_array = holiday_hash[:spring].values.flatten
-  new_array << supply
-  holiday_hash[:spring][memorial_day_supplies] << supply
+  holiday_hash[:spring][memorial_day] << supply
   holiday_hash
 end
 
